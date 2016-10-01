@@ -1,0 +1,233 @@
+/*------------------------------------*\
+  CSS Reset
+\*------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-style: inherit;
+  cursor: default;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+
+/*------------------------------------*\
+  Font Face
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+ 	Highlight Seclections
+\*------------------------------------*/
+
+	::selection {
+		background: #333;
+		color: #fff;
+		text-shadow: none; /* Safari */
+	}
+
+	::-moz-selection {
+		background: #333;
+		color: #fff;
+		text-shadow: none; /* Firefox */
+	}
+
+
+/*------------------------------------*\
+  Document default
+\*------------------------------------*/
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font: 300 16px/26px 'Source Sans Pro', sans-serif;
+  color: #999; /* Font Color Color Here */
+  background: #000;
+}
+
+body {
+	background: #111 url("../img/background-slice.gif") top left repeat-x; /* Change Background Color Here */
+}
+
+a, a:visited {
+  color: #0088cc;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+a.highlight:hover {
+	border-bottom: 3px solid rgba(255,255,255,0.2);
+}
+
+a:hover, a:visited:hover {
+    color: #fff; }
+
+a.button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #999;
+  line-height: 3;
+  margin-left: auto;
+  margin-right: auto;
+  color: #e5e5e5;
+  font-weight: 700;
+  margin-top: 4em;
+}
+
+a.button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+img.avatar {
+	width: 75px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #e5e5e5;
+  font-size: 2.1em;
+}
+
+/*------------------------------------*\
+  Site box
+\*------------------------------------*/
+
+#contain #content {
+  width: 420px;
+  padding: 20px;
+  margin-bottom: 10em;
+}
+
+#contain #content * {
+  text-align: center; }
+
+/*------------------------------------*\
+  Centralised box
+\*------------------------------------*/
+
+#wrap {
+  width: 100%;
+  height: 100%;
+  display: table;
+  position: relative;
+  z-index: 5; }
+
+#wrap #contain {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  margin-bottom: 200px; }
+
+#wrap #contain #content {
+  display: inline-block; }
+
+/*------------------------------------*\
+  Header
+\*------------------------------------*/
+
+#header {
+  margin: 0 0 24px;
+  position: relative;
+}
+
+
+/*------------------------------------*\
+  Skills
+\*------------------------------------*/
+
+#intro {
+  font-size: 22px;
+  color: #999;
+  line-height: 30px;
+	text-align: center;
+	margin-bottom: 24px;
+  display: block;
+}
+
+#intro a {
+  color: #fff;
+ }
+
+/*------------------------------------*\
+  Networks
+\*------------------------------------*/
+
+#networks {
+	padding-top: 24px;
+}
+
+#networks a {
+  color: white;
+	text-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 30px;
+	opacity: 0.3;
+	font-family: 'icomoon';
+}
+
+#networks a:first-child {
+	margin-left: 0px;
+}
+
+#networks a:hover {
+    color: #fff;
+		opacity: .9;
+}
+
+/*------------------------------------*\
+  Footer
+\*------------------------------------*/
+
+#footer {
+  font-size: 18px;
+  font-weight: 300;
+  color: #e5e5e5;
+  margin-left: 30px;
+  text-align: left;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:45px;
+  width:100%;
+}
+
+#footer a {
+  color: #e5e5e5;
+}
+
+#footer a:hover {
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
+
+/*------------------------------------*\
+  Clearfix
+\*------------------------------------*/
+
+.clear, #header, #footer {
+  zoom: 1; }
+
+.clear:before, #header:before, #footer:before, .clear:after, #header:after, #footer:after {
+    content: '';
+    display: block; }
+
+.clear:after, #header:after, #footer:after {
+    clear: both; }
