@@ -23,9 +23,32 @@
 
     </script>
 
+  <!-- Randomize Background
+  <script type="text/javascript">
+
+        var images = ['background1.svg', 'background3.svg', 'background2.svg'];
+        //$('body').css({'background-image': 'url(..img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+        //document.getElementById("body").style.backgroundImage =
+        document.body.style.backgroundColor = "yellow";
+
+  </script>-->
+
+  <script type="text/javascript">
+		function changeImg(imgNumber)	{
+			var myImages = ["img/background1.svg", "img/background2.svg", "img/background3.svg"]; 
+			var imgShown = document.body.style.backgroundImage;
+			var newImgNumber =Math.floor(Math.random()*myImages.length);
+			document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
+		}
+		window.onload=changeImg;
+	</script>
+
 	<!-- Favicon -->
 
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#666666">
+    <meta name="theme-color" content="#141414">
 
 	<!-- CSS -->
 
@@ -44,15 +67,15 @@
         <div class="animated fadeIn" id="content">
           <div id="header">
             <header>
-              <img class="avatar hover" src="img/chris@2x1.png" alt="Christopher Alan"/> <!-- Logo Here -->
+              <img class="avatar hover" src="img/updatedMark_2017.svg" alt="Christopher Alan"/>
             </header>
           </div>
           <h1>Christopher Alan</h1>
-          <p id="intro">designer by day, vigilante by night!</p> <!-- Talk about yourself here -->
+          <p id="tagline">designer by day, vigilante by night!</p>
 
           <p class="animated fadeInUp">
           <!--<a href="https://christopheralan.myportfolio.com/" class="button">VIEW PORTFOLIO</a>-->
-          <a href="http://cargocollective.com/christopheralan/" class="button">VIEW PORTFOLIO</a>
+          <a href="http://cargocollective.com/christopheralan/" class="button">View Portfolio</a>
           </p>
         </div>
 

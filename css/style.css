@@ -46,17 +46,22 @@
 body, html {
   width: 100%;
   height: 100%;
-  font: 300 16px/26px 'Source Sans Pro', sans-serif;
-  color: #999; /* Font Color Color Here */
-  background: #000;
+  font: 400 16px/26px 'Source Sans Pro', sans-serif;
+  color: #fff;
+  background: #141414;
 }
 
 body {
-	background: #111 url("../img/background-slice.gif") top left repeat-x; /* Change Background Color Here */
+  background-image: url("../img/background1.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a, a:visited {
-  color: #0088cc;
+  color: #00E68A;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
@@ -66,33 +71,29 @@ a, a:visited {
   transition: all 0.15s ease;
 }
 
-a.highlight:hover {
-	border-bottom: 3px solid rgba(255,255,255,0.2);
-}
-
-a:hover, a:visited:hover {
-    color: #fff; }
-
 a.button {
   display: block;
   width: 200px;
-  height: 50px;
-  border: 1px solid #999;
-  line-height: 3;
+  height: 44px;
+  line-height: 2.45;
+  letter-spacing: .1em;
   margin-left: auto;
   margin-right: auto;
-  color: #e5e5e5;
-  font-weight: 700;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.1em;
   margin-top: 4em;
+  border-radius: 4px;
+  background: #00FF99;
 }
 
 a.button:hover {
-  border: 1px solid #fff;
-  color: #fff;
+  background: #00EB8D;
+  transform: translateY(-1px);
 }
 
 img.avatar {
-	width: 75px;
+	width: 116px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -101,8 +102,10 @@ img.avatar {
 h1 {
   font-weight: 900;
   text-transform: uppercase;
-  color: #e5e5e5;
-  font-size: 2.1em;
+  color: #fff;
+  font-size: 2.75em;
+  letter-spacing: .2em;
+  line-height: 1;
 }
 
 /*------------------------------------*\
@@ -110,7 +113,7 @@ h1 {
 \*------------------------------------*/
 
 #contain #content {
-  width: 420px;
+  //width: 420px;
   padding: 20px;
   margin-bottom: 10em;
 }
@@ -152,18 +155,16 @@ h1 {
   Skills
 \*------------------------------------*/
 
-#intro {
-  font-size: 22px;
-  color: #999;
-  line-height: 30px;
+#tagline {
+  font-size: 1.5em;
+  color: #fff;
+  line-height: 1.2;
 	text-align: center;
+  margin-top: 10px;
 	margin-bottom: 24px;
   display: block;
+  opacity: 0.50;
 }
-
-#intro a {
-  color: #fff;
- }
 
 /*------------------------------------*\
   Networks
@@ -210,12 +211,27 @@ h1 {
 }
 
 #footer a {
-  color: #e5e5e5;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+#footer a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #00FF99;
+    transition: width .3s;
 }
 
 #footer a:hover {
-  color: #fff;
-  border-bottom: 1px #fff solid;
+  color: #00FF99;
+}
+
+#footer a:hover::after {
+  width: 100%;
 }
 
 /*------------------------------------*\
