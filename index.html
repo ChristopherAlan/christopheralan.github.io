@@ -23,19 +23,11 @@
 
     </script>
 
-  <!-- Randomize Background
-  <script type="text/javascript">
-
-        var images = ['background1.svg', 'background3.svg', 'background2.svg'];
-        //$('body').css({'background-image': 'url(..img/' + images[Math.floor(Math.random() * images.length)] + ')'});
-        //document.getElementById("body").style.backgroundImage =
-        document.body.style.backgroundColor = "yellow";
-
-  </script>-->
+  <!-- Randomize Background -->
 
   <script type="text/javascript">
 		function changeImg(imgNumber)	{
-			var myImages = ["img/background1.svg", "img/background2.svg", "img/background3.svg"]; 
+			var myImages = ["img/background1.svg", "img/background2.svg", "img/background3.svg", "img/background4.svg"];
 			var imgShown = document.body.style.backgroundImage;
 			var newImgNumber =Math.floor(Math.random()*myImages.length);
 			document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
