@@ -19,7 +19,20 @@
 /*------------------------------------*\
   Font Face
 \*------------------------------------*/
+@font-face {
+    font-family: NeueHaasDisplay;
+    src: url(../fonts/NeueHaasGrotDisp-75Bold-Web.woff2);
+}
 
+@font-face {
+    font-family: NeueHaasRegular;
+    src: url(../fonts/NeueHaasGrotText-55Roman-Web.woff2);
+}
+
+@font-face {
+    font-family: Unica77;
+    src: url(../fonts/Unica77Web-Bold.woff2);
+}
 
 
 /*------------------------------------*\
@@ -46,7 +59,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  font: 400 16px/26px 'Source Sans Pro', sans-serif;
+  font: 400 1em/1.618em NeueHaasRegular, Helvetica, sans-serif;
   color: #fff;
   background: #141414;
 }
@@ -100,11 +113,12 @@ img.avatar {
 }
 
 h1 {
-  font-weight: 900;
+  font-family: NeueHaasDisplay, Unica77, Helvetica;
+  font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  font-size: 2.75em;
-  letter-spacing: .2em;
+  font-size: 3.75rem;
+  letter-spacing: .1rem;
   line-height: 1;
 }
 
@@ -156,14 +170,14 @@ h1 {
 \*------------------------------------*/
 
 #tagline {
-  font-size: 1.5em;
+  font-size: 1.618em;
   color: #fff;
   line-height: 1.2;
 	text-align: center;
   margin-top: 10px;
 	margin-bottom: 24px;
   display: block;
-  opacity: 0.50;
+  opacity: 0.65;
 }
 
 /*------------------------------------*\
